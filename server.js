@@ -109,7 +109,7 @@ app.get('/badge.svg', async (req, res) => {
 
     const svg = `
         <svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(100,0)">
+        <g transform="translate(20,0)">
              <defs>
                 <clipPath id="roundedImage">
                      <circle cx="400" cy="200" r="100"/>
