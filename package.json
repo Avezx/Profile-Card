@@ -1,11 +1,9 @@
 {
-  "name": "svgserv",
-  "private": true,
-  "version": "0.0.0",
+  "name": "server-svg",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js"
   },
   "devDependencies": {
     "prettier": "^3.3.1",
