@@ -108,7 +108,8 @@ app.get('/badge.svg', async (req, res) => {
     ).join('\n              ');
 
     const svg = `
-        <svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(100,0)">
              <defs>
                 <clipPath id="roundedImage">
                      <circle cx="400" cy="200" r="100"/>
@@ -195,6 +196,7 @@ app.get('/badge.svg', async (req, res) => {
             <!-- Footer -->
             <text x="400" y="620" font-size="14" text-anchor="middle" fill="#9e928b" 
                   font-family="JetBrains Mono, monospace">Joined: ${createdDate}</text>
+                  </g>
         </svg>
     `;
 
